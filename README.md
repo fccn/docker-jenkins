@@ -1,4 +1,7 @@
 # Jenkins Docker
+
+[![Build Status](https://dev.azure.com/pcosta-fccn/Docker base images/_apis/build/status/fccn.docker-jenkins?branchName=master)](https://dev.azure.com/pcosta-fccn/Docker base images/_build/latest?definitionId=5&branchName=master)
+
 Jenkins adaptation for running docker pipelines as a docker container.
 
 Based on [jenkinsci/blueocean](https://hub.docker.com/r/jenkinsci/blueocean) Alpine image and adds user jenkins to the docker group (default GID 999) to allow it to run docker inside the container. 

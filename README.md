@@ -1,6 +1,7 @@
 # Jenkins Docker
 
-[![Build Status](https://dev.azure.com/pcosta-fccn/Docker base images/_apis/build/status/fccn.docker-jenkins?branchName=master)](https://dev.azure.com/pcosta-fccn/Docker base images/_build/latest?definitionId=5&branchName=master)
+[![Docker Pulls](https://img.shields.io/docker/pulls/stvfccn/jenkins.svg)](https://hub.docker.com/r/stvfccn/jenkins/)
+[![Build Status](https://dev.azure.com/pcosta-fccn/Docker%20base%20images/_apis/build/status/fccn.docker-jenkins?branchName=master)](https://dev.azure.com/pcosta-fccn/Docker%20base%20images/_build/latest?definitionId=5&branchName=master)
 
 Jenkins adaptation for running docker pipelines as a docker container.
 

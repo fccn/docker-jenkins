@@ -80,9 +80,9 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/fccn/docker-npn-webapp-base/tags).
 
-###Versions
+### Versions
 - 1.0.1 - jenkins 2.150.2
-- 1.0.2 - jenkins 2.164.1
+- 1.0.2 - jenkins >= 2.164.1
 
 ## License
 

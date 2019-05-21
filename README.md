@@ -8,6 +8,8 @@ Jenkins adaptation for running docker pipelines as a docker container.
 Based on [jenkinsci/blueocean](https://hub.docker.com/r/jenkinsci/blueocean) Alpine image and adds user jenkins to the docker group (default GID 999) to allow it to run docker inside the container. 
 You can fetch the latest image in [docker hub](https://hub.docker.com/r/stvfccn/jenkins), this image will use the GID 999 for the docker group. To use a different GID you need to build a new image.
 
+Since version 1.1.0 Ansible has been added to the image enabling the usage of Ansible plugin for Jenkins
+
 ## Requirements
 
 To build this container you need to have docker installed. A makefile is provided along with the project to facilitate
@@ -86,7 +88,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ### Versions
 - 1.0.1 - jenkins 2.150.2
-- 1.0.2 - jenkins >= 2.164.1
+- 1.0.2 - jenkins 2.164.1-2
+- 1.1.0 - jenknis >= 2.164.3 with support for ansible
 
 ## License
 

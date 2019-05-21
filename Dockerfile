@@ -16,7 +16,9 @@ RUN echo '@testing http://nl.alpinelinux.org/alpine/edge/testing' >> /etc/apk/re
   && echo '@edge http://nl.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories \
   &&  apk update && apk upgrade --no-cache --available \
   && apk add --upgrade apk-tools@edge \
-  && apk add --no-cache --upgrade ca-certificates shadow tzdata && update-ca-certificates \
+  && apk add --no-cache --upgrade ca-certificates shadow tzdata python3 py3-yaml py3-paramiko py3-asn1 py3-cryptography py3-idna \
+  py3-asn1crypto py3-bcrypt py3-pynacl py3-cffi py3-cparser py3-six py3-jinja2 py3-markupsafe py3-crypto \
+  && update-ca-certificates && pip3 install ansible \
   && rm -rf /var/cache/apk/* \
 # Change TimeZone
  && cp /usr/share/zoneinfo/Europe/Lisbon /etc/localtime \

@@ -27,7 +27,7 @@ build-nc: ## Build the image without caching
 	docker build --no-cache -t $(APP_NAME) --build-arg DOCKER_GID=$(DOCKER_GID) $(BUILD_ARGS) .
 
 shell: image ## Run a shell in new container and attach source files
-	docker run -a stdin -a stdout -i -t --rm --name "jenkins" -v /var/run/docker.sock:/var/run/docker.sock -v $(PWD)/home:/var/jenkins_home --entrypoint=/bin/sh $(APP_NAME)
+	docker run -a stdin -a stdout -i -t --rm --name "jenkins" --user=root -v /var/run/docker.sock:/var/run/docker.sock -v $(PWD)/home:/var/jenkins_home --entrypoint=/bin/sh $(APP_NAME)
 
 run: image ## Run this image
 	docker run -i -t --rm --name "jenkins" -p "$(HOST_HTTP_PORT):8080" -p "$(HOST_SERVICE_PORT):50000" -v /var/run/docker.sock:/var/run/docker.sock -v $(PWD)/home:/var/jenkins_home $(APP_NAME)

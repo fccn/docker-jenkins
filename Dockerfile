@@ -1,4 +1,4 @@
-FROM jenkinsci/blueocean
+FROM jenkinsci/blueocean:1.24.7
 
 LABEL maintainer="Paulo Costa <paulo.costa@fccn.pt>"
 

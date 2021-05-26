@@ -10,8 +10,8 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  image.version.major: '1'
-  image.version.minor: '1'
+  image.version.major: '2'
+  image.version.minor: '0'
   image.version: '$(image.version.major).$(image.version.minor).0'
   image.basename: 'jenkins'
   image.name: '$(image.basename):$(build.buildId)'
